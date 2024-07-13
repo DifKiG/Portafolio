@@ -8,6 +8,7 @@ const emailError = document.querySelector("#emailError");
 const asuntoError = document.querySelector("#asuntoError");
 const mensajeError = document.querySelector("#textareaError");
 
+
 const button = document.querySelector("#buton");
 
 button.addEventListener("click", (event) =>{
