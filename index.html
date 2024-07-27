@@ -124,10 +124,11 @@
         </div>
       </section>
 
-      <!--Skills pdte agregar imagenes decorativas -->
+      <!--Skills  -->
       <section class="habilidades" id="habilidades">
         <h1 data-section="habilidades" data-value="title" data-aos="fade-up">Habilidades</h1>
 
+        <!--pdte agregar imagenes decorativas-->
         <img src="" alt="">
         <img src="" alt="">
 
@@ -211,32 +212,158 @@
       </section>
 
       <!--Proyectos-->
-      <section>
-        <h1></h1>
-        <img src="" alt="">
-        <img src="" alt="">
+      <section class="proyectos" id="proyectos">
+        <h1 data-section="proyectos" data-value="title" data-aos="fade-up">Proyectos</h1>
+        <!--<img src="" alt="">
+        <img src="" alt="">-->
 
-        <div>
-          <div>
-            <img src="" alt="">
+        <div class="cards_container--proyectos">
+
+              <div class="cards--proyectos card_Barberia" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                <div class="container_imgCard--proyectos">
+                  <img src="assets/images/barberia.png" alt="barberia">
+                </div>
+
+                <div class="container_textCard--proyectos">
+                  <h2 data-section="proyectos" data-value="title-proyecto1">Landing Page Barberia</h2>
+                  <p data-section="proyectos" data-value="info-proyecto1">Pagina web donde se promociona los servicios de la barberia </p>
+                </div>
+
+                <div class="container_btn--proyectos">
+                  <a href="https://difkig.github.io/Barber/" target="_blank">
+                    <button class="btn_demo">
+                      <img src="assets/images/ver-demo.png" alt="demostracion">Demo
+                    </button>
+                  </a>
+
+                <a href="https://github.com/DifKiG/Barber" target="_blank">
+                  <button class="btn_repo">
+                    <img src="assets/images/git-repo.png"  alt="Repositorio">Repo
+                  </button>
+                </a>
+              </div>
+            </div>
+
+          <div class="cards--proyectos card_memorama" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+            <div class="container_imgCard--proyectos">
+              <img src="./assets/images/memorama.png" alt="imagen del juego">
+            </div>
+
+            <div class="container_textCard--proyectos text-memorama">
+              <h2 data-section="proyectos" data-value="info-proyecto2">Memorama</h2>
+              <p data-section="proyectos" data-value="info-proyecto2">Memorama es un juego en el que evidenciará su destreza para memorizar las parejas de números</p>
+            </div>
+
+            <div class="container_btn--proyectos">
+              <a href="#" target="_blank">
+                <button class="btn_demo">
+                  <img src="assets/images/ver-demo.png" alt="demostracion">Demo
+                </button>
+              </a>
+        
+            <a href="https://github.com/DifKiG/memorama" target="_blank">
+              <button class="btn_repo"
+                <img src="assets/images/icon-github.png" alt="Repositorio">
+              </button>
+            </a>
           </div>
+        
 
-          <div>
-            <h2></h2>
-            <p></p>
-          </div>
+          <div class="cards--proyectos card _arepasla23" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+            <div class="container_imgCard--proyectos">
+              <img src="assets/images/Arepasla23.png" alt="menu de arepas">
+            </div>
+        
+            <div class="container_textCard--proyectos">
+              <h2 data-section="proyectos" data-value="title-proyecto3">Pagina Web</h2>
+              <p data-section="proyectos" data-value="info-proyecto3"> Menu de comidas en el que se visualiza la carta y cuenta con redireccionamiento al whatsapp</p>
+            </div>
 
-          <div>
-            <a href="">
-              <button>
-                <img src="" alt="">
-            </button>
-          </a>
-          
+            <div>
+              <a href="https://difkig.github.io/MenuLa23/" target="_blank">
+                <button class="btn_demo">
+                  <img src="assets/images/ver-demo.png" alt="Demo">Demo
+                </button>
+              </a>
+
+              <a href="https://github.com/DifKiG/MenuLa23" target="_blank">
+                <button class="btn_repo">
+                  <img src="assets/images/git-repo.png" alt="Repo-Github">Repo
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </section>
+
+      <!--Contactame-->
+      <section class="contacto" id="contacto">
+        <h1 data-section="contacto" data-value="title" data-aos="fade-up">Contacto</h1>
+
+        <div class="container--contacto">
+          <div class="container_text--contacto">
+            <p data-section="contacto" data-value="text">Contactame completando el siguiente formulario y me pondré en contacto para reunirnos</p>
+          </div>
+
+          <form id="form" class="form-contact" name="contacto-portafolio" action="https://formsubmit.co/digeokijano@hotmail.com" method="POST">
+            <input id="nombre" type="text" name="name" placeholder="Nombre | Name" required>
+            <input id="numero" type="text" name="numero" placeholder="Numero Whatsapp | Whatsapp" required>
+            <input id="email" type="email" name="email" placeholder="E-mail" required>
+            <input id="asunto" type="text" name="affair" placeholder="Asunto | Subject" required>
+            <input type="hidden" name="_next" value="https://difkig.github.io/portafolio/">
+            <textarea name="message" id="mensaje" cols="20" rows="4" placeholder="Mensaje | Message" required></textarea>
+
+            <div class="btn_form--contacto">
+              <button id="btn-enviar" type="submit" data-section="contacto" data-value="btn-enviar">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      </section>
     </main>
 
+    <!--Footer-->
+    <footer>
+      <div class="container--footer">
+        <div class="container_redes-footer">
+          <a href="www.linkedin.com/in/diego-quijano-developer" target="_blank">
+            <img src="assets/images/linkedin_icon.png" alt="LinkedIn">
+          </a>
+          <a href="https://github.com/DifKiG" target="_blank">
+            <img src="assets/images/icon-github.png" alt="Github">
+          </a>
+          <a href="https://x.com/diferthc" target="_blank">
+            <img src="assets/images/icon-x.png" alt="twitter">
+          </a>
+          <a href="https://drive.google.com/file/d/1VolHv_IStq-TR321zH6cseFH0Iy3-okp/view?usp=sharing" target="_blank">
+            <img src="assets/images/icon_cv.png" alt="CV">
+          </a>
+        </div>
+
+        <div class="container_text--footer">
+          <span>Copyright &copy; | Coded with </span>
+          <span>by</span>
+          <span>Diego Quijano</span>
+        </div>
+      </div>
+    </footer>
+
+    <div class="fo-top-container">
+      <div class="go-top-button">
+        <i class="fas fa-chevron-up"></i>
+      </div>
+    </div>
+
+    <!--archivo js-->
+    <script https://unpkg.com/aos@2.3.1/dist/aos.js></script>
+
+    <!--libreria animaciones-->
+    <script>
+      AOS.init();
+    </script>
+
+    <!--Mi script pdt agregar-->
+    <script src=""></script>
+
   </body>
-</html>  
+</html> 
