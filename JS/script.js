@@ -8,6 +8,7 @@ const textToChange = document.querySelectorAll('[data-section');
 /*-----Loader------*/
 window.addEventListener('load',()=> {
     const contenedorLoader = document.querySelector('.container--loader');
+    contenedorLoader.computedStyleMap.opacity = 0;
     contenedorLoader.computedStyleMap.visibility ='hidden';
 });
 
@@ -29,7 +30,7 @@ btn.addEventListener('click', function(){
         this.classList.add('active');
         this.classList.remove('not-active');
         document.querySelector('nav_menu').classList.remove('not-active');
-        DocumentTimeline.querySelector('.nav_menu').classList.add('active');
+        document.querySelector('.nav_menu').classList.add('active');
     }
 });
 
@@ -50,3 +51,35 @@ const changeLanguage = async language =>{
   })
 
   /*---class active por secciones---- */
+  window.addEventListener('scroll', () =>{
+    const scrollY = window.pageYOffset;
+    sectionAll.forEach((current) =>{
+      const sectionHeight =current.offsetHeight;
+      const sectionTop =current.offsetTop -100;
+      const sectionId = current.getAttribute('id');
+
+      if (scrollY > sectionTop && scrollY < sectionTop + sectionHeight) {
+        document.querySelector('nav a [href*=' + sectionId + ']').classList.add('active');
+      }
+      else{
+        document.querySelector('nav a [href*=' + sectionId + ']').classList.remove('active');
+      }
+    });
+  });
+
+/*----Boton y funcion ir arriba --- */
+window.onscroll = function(){
+  if (document.documentElement.scrollTop > 100) {
+    document.querySelector('.go-top-container').classList.add(show);
+  }
+  else {
+    document.querySelector('.go-top-container').classList.remove(show);
+  }
+}
+
+document.querySelector('go-top-container').addEventListener('click', () =>{
+  window.scrollTo({
+    top:0,
+    behavior: 'smooth'
+  });
+});
